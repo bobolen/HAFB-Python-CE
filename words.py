@@ -7,6 +7,7 @@ Task 2: Count the number of times each word appears in the file
 """
 from urllib.request import urlopen
 file = "http://icarus.cs.weber.edu/~hvalle/hafb/words.txt"
+from functions import even_or_odd
 
 count = 0
 dictionary = {}
@@ -25,3 +26,5 @@ print("Total number of words is", count)
 for key in sorted(dictionary.keys()):
     print(key, dictionary[key])
 # print(dictionary)
+
+even_or_odd(count)
