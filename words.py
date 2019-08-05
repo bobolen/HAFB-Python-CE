@@ -16,25 +16,26 @@ def word_count(url):
     :param url: url to retrieve file from
     """
 
-    file = url
+
     count = 0
-    dictionary = {}
-    with urlopen(file) as story:
+    data = []
+    with urlopen(url) as story:
         for line in story:
             words = line.decode('utf-8').split()    # split with space as separator
             # print(words)
             for word in words:
-                count += 1
-                if word in dictionary:
-                    dictionary[word] += 1
-                else:
-                    dictionary[word] = 1
-    print("Total number of words is", count)
-    # Sort by key values
-    for key in sorted(dictionary.keys()):
-        print(key, dictionary[key])
-    # print(dictionary)
+                data.append(word)
+    return data
 
+
+def print_items(items):
+    """
+    print elements of the collection
+    :param story_words: A collection of objects
+    :return: nothing
+    """
+    for item in items:
+        print(item)
 
 def main():
     """
@@ -42,7 +43,8 @@ def main():
     :return: nothing
     """
     file = "http://icarus.cs.weber.edu/~hvalle/hafb/words.txt"
-    word_count(file)
+    words = word_count(file)
+    print_items(words)
 
 
 if __name__ == '__main__':
