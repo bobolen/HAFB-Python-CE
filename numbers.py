@@ -28,3 +28,5 @@ print("Boolean const. bool('False')", bool("False"))
 a = 12
 print("a == 12", a == 12)
 print("a != 12", a != 12)
+
+print("New Line")
