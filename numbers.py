@@ -24,3 +24,7 @@ print("Boolean const. bool([])", bool([]))
 print("Boolean const. bool([1, 2, 3])", bool([1, 2, 3]))
 print("Boolean const. bool("")", bool(""))
 print("Boolean const. bool('False')", bool("False"))
+# Relational Operators: ==, !=, <, >, >=, <=
+a = 12
+print("a == 12", a == 12)
+print("a != 12", a != 12)
