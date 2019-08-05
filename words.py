@@ -5,10 +5,7 @@ http://icarus.cs.weber.edu/~hvalle/hafb/words.txt
 Task 1: Count the number of words in document
 Task 2: Count the number of times each word appears in the file
 """
-
 from urllib.request import urlopen
-
-#file = "http://icarus.cs.weber.edu/~hvalle/hafb/words.txt"
 
 
 def word_count(url):
@@ -44,7 +41,8 @@ def main():
     Test function
     :return: nothing
     """
-    word_count()
+    file = "http://icarus.cs.weber.edu/~hvalle/hafb/words.txt"
+    word_count(file)
 
 
 if __name__ == '__main__':
