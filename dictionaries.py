@@ -13,3 +13,19 @@ d = {'alice': '801-123-45-8988',
 # Access one element
 print(d,type(d))
 print("John's value is", d['john'])
+
+# Add members to the dictionary, of names-> grades
+roster = {}       # Empty dictionary
+n = 0
+while n < 3:
+     # Get key value
+     name = input("What is the name?")
+     # Get value associated to key
+     grade = input("what is their grade?")
+     # Add element to dictionary
+     # Note: If key value exists, it will update the value
+     #       otherwise it will add it to the dictionary
+     roster[name] = grade
+     n += 1
+# Print dictionary
+print(roster)
