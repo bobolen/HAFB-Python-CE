@@ -21,4 +21,7 @@ with urlopen(file) as story:
             else:
                 dictionary[word] = 1
 print("Total number of words is", count)
-print(dictionary)
+# Sort by key values
+for key in sorted(dictionary.keys()):
+    print(key, dictionary[key])
+# print(dictionary)
