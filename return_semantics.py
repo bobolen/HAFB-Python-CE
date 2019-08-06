@@ -37,6 +37,18 @@ def banner(message, border="*"):
     print((len(message)+4) * border)
 
 
+def add_spam(menu=None):
+    """
+    Add spam to the menu list
+    :param menu:
+    :return: menu list
+    """
+    if menu is None:
+        menu = []
+    menu.append('spam')
+    return menu
+
+
 def main():
     """
     Test function
@@ -51,9 +63,17 @@ def main():
     sum_two(n1, n2)
     sum_two(n1)
 
-    m1 = "Weber State"
+    m1 = "Weber State University"
+    m2 = "WSU"
     banner(m1)
     banner(m1, "$")
+    banner(m2)
+    banner(m2, "$")
+
+    breakfast = ['eggs', 'bacon']
+    print("Before", breakfast)
+    add_spam(breakfast)
+    print("After ", breakfast)
 
 
 if __name__ == '__main__':
