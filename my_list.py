@@ -16,6 +16,7 @@ def main():
     # Use negative index
     print("s[-1]:", s[-1])
     # Slicing
+    print(s)
     print("From 1 to one before the last member", s[1:-1])
     print("From 1 to three member", s[1:3])
     print("From 1 to the end", s[1:])
@@ -113,7 +114,6 @@ def main():
     print(w)
     w.sort(key=len)
     print(w)
-
 
 
 if __name__ == '__main__':
