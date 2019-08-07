@@ -13,11 +13,11 @@ def is_prime(n):
     :return: True if prime
             False if not prime
     """
-    if n < 2
+    if n < 2:
         return False
-    else
-        for i in range(2, ing(sqrt(n)) + 1):
-            if num % i == 0:
+    else:
+        for i in range(2, int(sqrt(n)) + 1):
+            if n % i == 0:
                 return False
 
     return True
@@ -60,6 +60,8 @@ def main():
     pp(teams_nba)
 
     # Filter predicates
+    primes = [x for x in range(1000001) if is_prime(x)]
+    print(len(primes), primes)
 
 
 if __name__ == '__main__':
