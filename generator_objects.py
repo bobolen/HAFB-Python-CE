@@ -19,7 +19,7 @@ def main():
           sum(x*x for x in range(1, 1000001)))
     # The sum of the prime numbers between 1 and 1M
     print("The sum of the prime numbers from 1 to 10K: ",
-          sum(x for x in range(1, 10001) if is_prime))
+          sum(x for x in range(1, 10001) if is_prime(x)))
 
 
 if __name__ == '__main__':
